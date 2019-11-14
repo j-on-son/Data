@@ -1,0 +1,62 @@
+http://lab.responsive.net/Littlefield/Plot?data=JOBIN&x=all
+
+<!DOCTYPE HTML>
+<html>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <title>Plot</title>
+    <link rel='stylesheet' type='text/css' href='/css/plot.css'/>
+    <script type='text/javascript' src='/js/lib/jquery-1.6.1.min.js'></script>
+    <script type='text/javascript' src='/js/testMobile.js'></script>
+    <script type='text/javascript' src='/js/plot.js'></script>
+    <script type='text/javascript' src='/js/download.js'></script>
+    <script type='text/javascript' src='/js/FileSaver.js'></script>
+</head>
+<body bgcolor=#FFFFFF>
+   <div align='center' style='font-family: Arial, Helvetica,  sans-serif;color:navy; position: relative;'>
+  <div class='top-controls'>
+    <button class='download' title="download" onclick="download('Plot of number of jobs accepted each day.xls');"></button>
+    <button class='reload' title="reload"onclick='document.location.reload(true);'></button>
+    <button class='close' title="close"onclick='window.close();'></button>
+  </div>
+  Plot of number of jobs accepted each day
+<br/> <br/> <br/>
+     <div id='content_1' class='content'>
+     <script>
+     var data = {
+     region: {x1: 1.0, x2: 486.0, y1: 0.0, y2: 23.0},
+     lines:[
+          {label: 'data', points: '1 13 2 15 3 8 4 19 5 14 6 15 7 10 8 16 9 10 10 6 11 11 12 15 13 8 14 16 15 13 16 11 17 13 18 17 19 12 20 19 21 10 22 15 23 15 24 15 25 5 26 9 27 6 28 9 29 9 30 8 31 15 32 14 33 19 34 15 35 15 36 13 37 9 38 15 39 10 40 11 41 15 42 9 43 13 44 12 45 9 46 10 47 11 48 9 49 13 50 12 51 4 52 22 53 14 54 16 55 13 56 10 57 12 58 19 59 14 60 10 61 10 62 15 63 13 64 19 65 14 66 9 67 10 68 11 69 10 70 10 71 10 72 11 73 8 74 7 75 9 76 16 77 5 78 13 79 8 80 14 81 14 82 10 83 12 84 10 85 7 86 11 87 11 88 8 89 10 90 14 91 12 92 16 93 13 94 10 95 12 96 11 97 8 98 15 99 15 100 13 101 17 102 15 103 8 104 17 105 8 106 14 107 11 108 10 109 9 110 9 111 11 112 5 113 13 114 7 115 13 116 12 117 7 118 10 119 12 120 14 121 7 122 14 123 16 124 17 125 14 126 15 127 17 128 12 129 5 130 16 131 6 132 15 133 13 134 12 135 12 136 8 137 8 138 14 139 10 140 10 141 7 142 14 143 11 144 17 145 11 146 15 147 16 148 7 149 12 150 12 151 12 152 14 153 15 154 14 155 14 156 13 157 12 158 11 159 16 160 6 161 12 162 10 163 11 164 10 165 15 166 11 167 17 168 9 169 13 170 18 171 7 172 6 173 13 174 13 175 11 176 11 177 13 178 8 179 14 180 9 181 10 182 12 183 22 184 11 185 7 186 16 187 9 188 9 189 8 190 16 191 8 192 11 193 6 194 10 195 13 196 17 197 8 198 12 199 11 200 8 201 9 202 7 203 8 204 14 205 16 206 11 207 7 208 9 209 11 210 13 211 9 212 12 213 14 214 22 215 9 216 10 217 17 218 6 219 16 220 9 221 10 222 10 223 10 224 17 225 8 226 6 227 8 228 16 229 14 230 16 231 8 232 12 233 22 234 13 235 10 236 13 237 15 238 14 239 17 240 15 241 9 242 9 243 15 244 9 245 7 246 8 247 8 248 17 249 16 250 13 251 11 252 9 253 12 254 13 255 11 256 14 257 8 258 9 259 14 260 9 261 9 262 11 263 11 264 12 265 18 266 12 267 14 268 13 269 15 270 14 271 6 272 11 273 18 274 8 275 10 276 10 277 15 278 11 279 12 280 13 281 13 282 11 283 14 284 6 285 6 286 17 287 11 288 8 289 12 290 11 291 11 292 13 293 15 294 7 295 9 296 11 297 9 298 12 299 8 300 22 301 9 302 9 303 11 304 16 305 16 306 13 307 22 308 9 309 9 310 11 311 17 312 5 313 18 314 6 315 14 316 7 317 12 318 9 319 7 320 18 321 17 322 16 323 16 324 9 325 12 326 9 327 15 328 11 329 16 330 12 331 14 332 10 333 16 334 9 335 7 336 14 337 8 338 10 339 11 340 13 341 6 342 9 343 13 344 14 345 14 346 14 347 12 348 8 349 13 350 6 351 18 352 13 353 5 354 13 355 9 356 15 357 10 358 15 359 11 360 14 361 10 362 15 363 6 364 12 365 9 366 14 367 12 368 20 369 10 370 10 371 11 372 9 373 6 374 8 375 16 376 7 377 9 378 13 379 10 380 12 381 4 382 13 383 11 384 8 385 8 386 12 387 13 388 8 389 11 390 15 391 7 392 11 393 14 394 12 395 9 396 13 397 9 398 7 399 7 400 8 401 23 402 14 403 14 404 8 405 15 406 8 407 7 408 8 409 14 410 12 411 18 412 13 413 12 414 12 415 8 416 13 417 11 418 10 419 12 420 9 421 10 422 18 423 15 424 19 425 12 426 12 427 6 428 15 429 15 430 12 431 8 432 10 433 10 434 14 435 16 436 9 437 20 438 9 439 11 440 10 441 8 442 14 443 11 444 8 445 19 446 8 447 14 448 11 449 13 450 5 451 11 452 6 453 17 454 13 455 6 456 10 457 10 458 17 459 12 460 12 461 13 462 8 463 10 464 8 465 12 466 9 467 11 468 9 469 8 470 12 471 11 472 8 473 18 474 14 475 10 476 9 477 14 478 12 479 10 480 9 481 12 482 12 483 13 484 9 485 12 486 9'}
+        ],
+        legend: "FALSE",
+        hAxisLabel: 'day',
+        xAxisDecimalFormat : {decimalSeparator: '.', decimalPrecision: 0, groupingSeparator: ',', groupingSize: 3},
+        yAxisDecimalFormat : {decimalSeparator: '.', decimalPrecision: 0, groupingSeparator: ',', groupingSize: 3},
+        width: 450, height: 300, 
+        xAxisStep: 50, yAxisStep: 40, 
+        onMouseWheelZoom: 1.1,
+        DecimalFormat: {
+          'x-data' : {decimalSeparator: '.', decimalPrecision: 0, groupingSeparator: ',', groupingSize: 3},
+          'y-data' : {decimalSeparator: '.', decimalPrecision: 0, groupingSeparator: ',', groupingSize: 3}
+        },
+        helpText : {
+           common : 'drag mouse over region of interest to zoom in plot',
+           touch_common : 'Drag over the region to change the scope of the axes<br/>Pinch or spread to zoom in plot',
+           touch_double_1 : '<br/>Double tap to reset plot',
+           touch_double_2 : '<br/>Double tap to show plot data',
+           touch_double_3 : 'Drag over the data (up and down or left and right) to scroll it<br/>Double tap to show plot',
+         },
+         localizeText:{
+           reset : 'reset',
+           data : 'data',
+           chart : 'chart',
+           clear : 'clear',
+           zoomIn : 'zoom in',
+           zoomOut : 'zoom out',
+         }
+      }
+      var plot = Plot.create('#content_1',data);
+  </script>
+  </div>
+</div>
+</BODY> </HTML>
